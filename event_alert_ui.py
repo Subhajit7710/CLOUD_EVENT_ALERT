@@ -9,7 +9,7 @@ st.title("🎉 Personal Event Reminder System")
 st.write("Track birthdays, payments, anniversaries, and other important dates.")
 
 # --- Backend API URLs (Render deployment) ---
-API_BASE = "https://cloud-event-api.onrender.com"  # your deployed backend URL
+API_BASE = "https://cloud-event-alert.onrender.com"  # your deployed backend URL
 API_URL = f"{API_BASE}/event"        # POST/DELETE endpoint
 UPCOMING_URL = f"{API_BASE}/upcoming"  # GET endpoint
 
