@@ -71,3 +71,9 @@ def get_upcoming_events():
             "days_left": days_left
         })
     return events
+
+@app.delete("/event/{event_id}")
+def delete_event(event_id: int):
+    cursor.execute("DELETE FROM events WHERE id = ?", (event_id,))
+    conn.commit()
+    return {"message": f"Event {event_id} deleted successfully"}
