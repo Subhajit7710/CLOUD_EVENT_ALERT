@@ -6,6 +6,9 @@ import datetime
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+@app.get("/")
+def home():
+    return {"message": "✅ API running properly!"}
 
 # Enable CORS so Streamlit frontend can call the API
 app.add_middleware(
