@@ -16,5 +16,5 @@ while True:
         if (event_date - today).days == notify_days:
             message = f"Reminder: {event_type} '{description}' is in {notify_days} day(s)!"
             send_telegram(message)
-            # send_sms("+91XXXXXXXXXX", message)  # Uncomment & replace with real number
-    time.sleep(3600)  # check every hour
+            send_sms("+9382100631", message)  
+    time.sleep(3600) 
